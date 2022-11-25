@@ -9,7 +9,7 @@ namespace UTNCursoApi.Controllers.v2
         [Route("[controller]")]
         public class HealthCheckController : ControllerBase
         {
-            [HttpGet()]
+            [HttpGet("v{version:apiVersion}")]
             public IActionResult Get()
             {
                 return Ok("OK");

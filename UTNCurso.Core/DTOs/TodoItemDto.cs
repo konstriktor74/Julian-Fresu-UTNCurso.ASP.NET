@@ -6,8 +6,8 @@ namespace UTNCurso.Core.DTOs
     {
         public long Id { get; set; }
 
-        //[Required]
-        //[MaxLength(10)]
+        [Required]
+        [MaxLength(10)]
         public string Task { get; set; }
 
         public bool IsCompleted { get; set; }
